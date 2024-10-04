@@ -1,7 +1,5 @@
 import Foundation
 
-final class zh_CN: Other, PluralizationRule {
-
-    let locale: LocaleIdentifier = "zh-CN"
-
+public final class zh_CN: Other, PluralizationRule, @unchecked Sendable {
+    public let locale: LocaleIdentifier = "zh-CN"
 }

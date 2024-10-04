@@ -1,7 +1,14 @@
+//
+//  PluralizationRuleStore+List.swift
+//  common-localizations
+//
+//  Created by Miroslav Kovac (Lingo).
+//  Updated by Thomas Benninghaus on 13.05.24.
+//
+
 import Foundation
 
-extension PluralizationRuleStore {
-    
+public extension PluralizationRuleStore {
     static let all: [PluralizationRule] = [
         ak(),
         am(),
@@ -136,5 +143,4 @@ extension PluralizationRuleStore {
         zh_TW(),
         zh(),
     ]
-    
 }

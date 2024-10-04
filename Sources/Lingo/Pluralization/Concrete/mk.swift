@@ -1,18 +1,10 @@
 import Foundation
 
-final class mk: PluralizationRule {
+public final class mk: PluralizationRule, @unchecked Sendable {
+    public let locale: LocaleIdentifier = "mk"
+    public let availablePluralCategories: [PluralCategory] = [.one, .other]
     
-    let locale: LocaleIdentifier = "mk"
-    
-    let availablePluralCategories: [PluralCategory] = [.one, .other]
-    
-    func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
-        if n % 10 == 1 && n != 11 {
-            return .one
-            
-        } else {
-            return .other
-        }
+    public func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
+        if n % 10 == 1 && n != 11 { return .one } else { return .other }
     }
-    
 }

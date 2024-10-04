@@ -1,7 +1,5 @@
 import Foundation
 
-final class bs: EastSlavic, PluralizationRule {
-
-    let locale: LocaleIdentifier = "bs"
-
+public final class bs: EastSlavic, PluralizationRule, @unchecked Sendable {
+    public let locale: LocaleIdentifier = "bs"
 }

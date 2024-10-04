@@ -1,7 +1,5 @@
 import Foundation
 
-final class or: OneWithZeroOther, PluralizationRule {
-
-    let locale: LocaleIdentifier = "or"
-
+public final class or: OneWithZeroOther, PluralizationRule, @unchecked Sendable {
+   public let locale: LocaleIdentifier = "or"
 }

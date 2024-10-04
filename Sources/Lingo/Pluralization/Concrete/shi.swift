@@ -1,7 +1,5 @@
 import Foundation
 
-final class shi: OneWithZeroOther, PluralizationRule {
-
-    let locale: LocaleIdentifier = "shi"
-
+public final class shi: OneWithZeroOther, PluralizationRule, @unchecked Sendable {
+    public let locale: LocaleIdentifier = "shi"
 }

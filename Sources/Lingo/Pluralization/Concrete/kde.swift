@@ -1,7 +1,6 @@
 import Foundation
 
-final class kde: Other, PluralizationRule {
-
-    let locale: LocaleIdentifier = "kde"
+public final class kde: Other, PluralizationRule, @unchecked Sendable {
+    public let locale: LocaleIdentifier = "kde"
 
 }

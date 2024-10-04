@@ -1,11 +1,9 @@
 import Foundation
 
-class OneWithZeroOther: AbstractPluralizationRule {
+public class OneWithZeroOther: AbstractPluralizationRule {
+    public let availablePluralCategories: [PluralCategory] = [.one, .other]
     
-    let availablePluralCategories: [PluralCategory] = [.one, .other]
-    
-    func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
+    public func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
         return [0, 1].contains(n) ? .one : .other
     }
-    
 }

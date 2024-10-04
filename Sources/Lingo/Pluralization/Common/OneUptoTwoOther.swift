@@ -1,11 +1,9 @@
 import Foundation
 
-class OneUptoTwoOther: AbstractPluralizationRule {
+public class OneUptoTwoOther: AbstractPluralizationRule {
+    public let availablePluralCategories: [PluralCategory] = [.one, .other]
     
-    let availablePluralCategories: [PluralCategory] = [.one, .other]
-    
-    func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
+    public func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
         return n >= 0 && n < 2 ? .one : .other
     }
-    
 }

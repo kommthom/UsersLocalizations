@@ -1,7 +1,5 @@
 import Foundation
 
-final class th: Other, PluralizationRule {
-
-    let locale: LocaleIdentifier = "th"
-
+public final class th: Other, PluralizationRule, @unchecked Sendable {
+    public let locale: LocaleIdentifier = "th"
 }

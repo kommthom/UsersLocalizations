@@ -1,7 +1,5 @@
 import Foundation
 
-final class fil: OneWithZeroOther, PluralizationRule {
-
-    let locale: LocaleIdentifier = "fil"
-
+public final class fil: OneWithZeroOther, PluralizationRule, @unchecked Sendable {
+    public let locale: LocaleIdentifier = "fil"
 }

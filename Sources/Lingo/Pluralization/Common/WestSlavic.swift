@@ -1,20 +1,12 @@
 import Foundation
 
 /// Used for Czech, Slovak.
-class WestSlavic: AbstractPluralizationRule {
+public class WestSlavic: AbstractPluralizationRule {
+    public let availablePluralCategories: [PluralCategory] = [.one, .few, .other]
     
-    let availablePluralCategories: [PluralCategory] = [.one, .few, .other]
-    
-    func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
-        if n == 1 {
-            return .one
-        }
-        
-        if (2...4).contains(n) {
-            return .few
-        }
-        
+    public func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
+        if n == 1 { return .one }
+        if (2...4).contains(n) { return .few }
         return .other
     }
-    
 }

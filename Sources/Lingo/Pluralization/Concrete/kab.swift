@@ -1,7 +1,5 @@
 import Foundation
 
-final class kab: OneUptoTwoOther, PluralizationRule {
-
-    let locale: LocaleIdentifier = "kab"
-
+public final class kab: OneUptoTwoOther, PluralizationRule, @unchecked Sendable {
+        public let locale: LocaleIdentifier = "kab"
 }

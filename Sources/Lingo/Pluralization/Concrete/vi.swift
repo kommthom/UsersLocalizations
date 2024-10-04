@@ -1,7 +1,5 @@
 import Foundation
 
-final class vi: Other, PluralizationRule {
-
-    let locale: LocaleIdentifier = "vi"
-
+public final class vi: Other, PluralizationRule, @unchecked Sendable {
+    public let locale: LocaleIdentifier = "vi"
 }

@@ -1,11 +1,9 @@
 import Foundation
 
-class Other: AbstractPluralizationRule {
+public class Other: AbstractPluralizationRule {
+    public let availablePluralCategories: [PluralCategory] = [.other]
     
-    let availablePluralCategories: [PluralCategory] = [.other]
-    
-    func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
+    public func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
         return .other
     }
-    
 }

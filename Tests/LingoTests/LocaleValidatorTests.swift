@@ -35,7 +35,7 @@ final class LocaleValidatorTests: XCTestCase {
             if !self.validator.validate(locale: pluralizationRule.locale) {
                 print(pluralizationRule.locale)
             }
-//            XCTAssertTrue(self.validator.validate(locale: pluralizationRule.locale))
+            XCTAssertTrue(self.validator.validate(locale: pluralizationRule.locale))
         }
     }
 

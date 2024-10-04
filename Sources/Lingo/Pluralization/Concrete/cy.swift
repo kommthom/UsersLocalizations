@@ -1,12 +1,10 @@
 import Foundation
 
-final class cy: PluralizationRule {
-
-    let locale: LocaleIdentifier = "cy"
-
-    let availablePluralCategories: [PluralCategory] = [.zero, .one, .two, .few, .many, .other]
+public final class cy: PluralizationRule, @unchecked Sendable {
+    public let locale: LocaleIdentifier = "cy"
+    public let availablePluralCategories: [PluralCategory] = [.zero, .one, .two, .few, .many, .other]
     
-    func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
+    public func pluralCategory(forNumericValue n: UInt) -> PluralCategory {
         switch n {
             case 0: return .zero
             case 1: return .one
@@ -16,5 +14,4 @@ final class cy: PluralizationRule {
             default: return .other
         }
     }
-    
 }
